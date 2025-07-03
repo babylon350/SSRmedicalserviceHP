@@ -1,0 +1,96 @@
+/* ===== ナビゲーション ===== */
+.navbar {
+  background-color: #8c52ff; /* アメジスト */
+  padding: 10px 0;
+  text-align: center;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.nav-list a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-list a:hover {
+  color: #ffdd57; /* ハイライトカラー（黄色） */
+}
+
+/* ===== 全体フォント ===== */
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.7;
+  font-size: 1.1em;
+}
+
+/* ===== セクション共通装飾 ===== */
+.section-box,
+#about, #skills, #services, #contact, #works {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9ff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+h2, h3 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+header h1 {
+  text-align: center;
+}
+
+/* ===== フッター ===== */
+footer {
+  text-align: center;
+  font-size: 0.8em;
+  color: #555;
+  padding: 20px 0;
+}
+
+/* ===== レスポンシブ対応 ===== */
+@media (max-width: 480px) {
+  body {
+    font-size: 0.95em;
+  }
+}
+
+/* モバイル対応：画面幅が600px以下のとき */
+@media screen and (max-width: 600px) {
+    .nav-list li a {
+        font-size: 12px; /* ← 現在14pxを12pxに微調整 */
+        padding: 6px 8px; /* ← 横幅も抑えめに */
+    }
+    h1 {
+        font-size: 1.1em; /* タイトルもさらに少しだけ抑える */
+    }
+}
+
+    h2 {
+        font-size: 1.2em;
+    }
+    .nav-list li a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+    a.button {
+        padding: 8px 16px; /* ボタンの余白を小さめに */
+        font-size: 14px;
+    }
+
