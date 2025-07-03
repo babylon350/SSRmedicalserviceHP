@@ -94,3 +94,46 @@ footer {
         font-size: 14px;
     }
 
+    /* ========== フォント統一 ========== */
+body,
+nav a,
+h1, h2, h3, h4, h5, h6,
+p, li, button {
+    font-family: "Noto Sans JP", "Noto Sans", sans-serif;
+    font-weight: 400; /* 必要に応じて調整 */
+    letter-spacing: 0.05em; /* 英字の視認性UP */
+}
+
+/* ========== ナビゲーション均等化 ========== */
+nav {
+    display: flex;
+    justify-content: space-evenly; /* 均等配置 */
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+nav a {
+    display: block;
+    padding: 0.5em 0.8em; /* 左右均等パディング */
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ========== スマホ対応：フォントサイズ調整 ========== */
+@media (max-width: 480px) {
+    nav a {
+        font-size: 14px;
+        padding: 0.5em 0.5em;
+    }
+}
+
+/* ========== その他補足（ボタン統一など必要に応じて） ========== */
+button,
+a.button {
+    font-family: "Noto Sans JP", "Noto Sans", sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+
